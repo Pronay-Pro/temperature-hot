@@ -15,7 +15,7 @@ searchBtn.addEventListener("click",function(){
 
 const updateUI = data =>{
    document.getElementById("city").innerHTML = data.name;
-   document.getElementById("tempature").innerHTML = parseInt(data.main.temp-280);
+   document.getElementById("tempature").innerHTML = parseInt(data.main.temp- 273);
    document.getElementById("clouds").innerHTML = data.weather[0].main;
    document.getElementById("weatherImg").setAttribute('src',`https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`);
    document.getElementById("cityInput").value = "";
